@@ -51,8 +51,6 @@ WebShield911/
 │  └─ demo-pages/
 │     ├─ legit1.html
 │     └─ phish1.html
-├─ slides/
-│  └─ slides.md
 ├─ .gitignore
 └─ LICENSE
 ```
@@ -83,9 +81,6 @@ WebShield911/
 ## Demo
 - `docs/demo-pages/phish1.html` simulates an external form posting credentials to another origin and uses common phishing phrases.
 - `docs/demo-pages/legit1.html` is a clean login form with sane semantics.
-
-## Pitch / Slides
-See `slides/slides.md` for a 10-slide outline. Export to PDF via VSCode Marp extension or paste into PowerPoint/Google Slides and export as PDF (rule: no AI slide generators).
 
 ## License
 MIT
