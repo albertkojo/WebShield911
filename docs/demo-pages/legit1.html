@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="referrer" content="same-origin">
+    <title>Example Corp — Account Center (Legit Demo)</title>
+    <style>
+      :root { color-scheme: light dark; }
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; line-height: 1.5; }
+      header { padding: 24px; border-bottom: 1px solid #e5e7eb; }
+      main { max-width: 720px; margin: 24px auto; padding: 0 16px; }
+      .card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; }
+      label { display:block; font-weight: 600; margin-top: 8px; }
+      input, button { padding: 10px 12px; border-radius: 8px; border: 1px solid #d1d5db; }
+      input { width: 100%; }
+      button { background: #2563eb; color: white; border: none; margin-top: 12px; cursor: pointer; }
+      small { color: #6b7280; }
+      code { background: #f3f4f6; padding: 2px 6px; border-radius: 6px; }
+      @media (prefers-color-scheme: dark) {
+        header { border-bottom-color: #1f2937; }
+        .card { border-color: #1f2937; }
+        input { background:#0b1020; color:#e5e7eb; border-color:#374151; }
+        code { background:#111827; color:#d1d5db; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Example Corp — Account Center</h1>
+      <p><small>Legit demo page with standard, privacy‑respecting behavior.</small></p>
+    </header>
+    <main>
+      <section class="card" aria-labelledby="acct-title">
+        <h2 id="acct-title">Email Preferences</h2>
+        <p>Update your contact email. We’ll send a confirmation link. No passwords requested here.</p>
+        <!-- This page intentionally avoids risky patterns for the detector:
+             - same-origin form action
+             - no password fields
+             - no hidden inputs
+             - no iframes
+             - no urgent/pressure language -->
+        <form action="/account/update-email" method="post" autocomplete="on">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" required inputmode="email" autocomplete="email" placeholder="you@example.com" />
+          <button type="submit">Save</button>
+        </form>
+        <p><small>Local testing tip: Opening this file directly (via <code>file://</code>) avoids the HTTP penalty. If you serve it with <code>python -m http.server</code>, you may see a small score bump from HTTP alone — that’s expected.</small></p>
+      </section>
+    </main>
+  </body>
+</html>

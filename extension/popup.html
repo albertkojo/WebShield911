@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>WebShield 911</title>
+    <link rel="stylesheet" href="popup.css"/>
+  </head>
+  <body>
+    <header>
+      <h1>WebShield 911</h1>
+      <div id="scoreBadge">--</div>
+    </header>
+    <section id="explain">
+      <ul id="items"></ul>
+    </section>
+    <section id="controls">
+      <button id="whitelistBtn">Whitelist domain</button>
+      <div class="settings">
+        <label>Warn ≥ <input id="warnThreshold" type="number" min="0" max="100" step="1"></label>
+        <label>High‑risk ≥ <input id="blockThreshold" type="number" min="0" max="100" step="1"></label>
+        <button id="saveThresholds">Save</button>
+      </div>
+    </section>
+    <footer>
+      <small>No data leaves your device.</small>
+    </footer>
+    <script src="popup.js"></script>
+  </body>
+</html>
